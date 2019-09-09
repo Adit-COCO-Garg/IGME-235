@@ -1,0 +1,1 @@
+for /l %%N IN (1,1,15) DO md "Week %%N"
