@@ -1,0 +1,83 @@
+@import "color-pallete";
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.top-nav{
+    background-color: $primary-color;
+}
+header{
+
+    display: inline-flex;
+    justify-content: space-between;
+    color: $tertiary-color;
+    align-items: center;
+    width:100%;
+    h1 {
+        flex:1 1 auto;
+    }
+    a{
+        all:unset;
+    }
+    a:not(:last-child){
+        margin-right:2vw;
+    }
+}
+.container{
+    padding: 0 4vw 0 4vw;
+    
+}
+
+#hum-tetris img{
+    width: 100%;
+}
+body{
+    background-color: $tertiary-color;
+}
+
+.tid-bits{
+    background-color: $sup2-color;
+    width:20%;
+    height:30vh;
+    margin-right:4%;
+    display:flexbox;
+    float:left;
+    p, h2{
+        padding:5%;
+    }
+    h2{
+        color: $sup1-color;;
+    }
+   
+    img{
+        width:100%;
+    }
+}
+
+.sec-main{
+    background-color:$secondary-color;
+    padding:2%;
+    width:44%;
+    height:28vh;
+    margin:4% 4% 4% 0;
+    float: left;
+    color:$sup2-color;
+    h2{
+        padding-bottom:4%;
+    }
+}
+
+footer{
+    clear:left;
+    height:7vh;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    color: $tertiary-color;
+    align-items: center;
+}
