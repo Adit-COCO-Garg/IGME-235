@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link href="gridlayout.css" type="text/css" rel="stylesheet"> -->
+    <title>Document</title>
+    <style>
+
+html { font-family: sans-serif }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4A4E69;
+}
+
+.mygrid {
+  width: 65%;
+  background-color: #22223B;
+  border: 1px dotted black;  
+  display: grid;
+  min-height: 90vh;
+  grid-template-rows: 100px 1fr 1fr 50px;
+  grid-template-columns: 175px 1fr 1fr;
+  grid-template-areas: 
+  "header header header"
+  "sidebar article article"
+  "sidebar article article"
+  "footer footer footer";
+}
+
+.titlebar {
+  background-color: #70877F;
+  color:white;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.navbar {
+  text-align: right;
+  margin-right: 2rem;
+}
+
+.name {
+  font-size: 2.5rem;
+}
+
+.logo {
+  text-align: left;  
+  margin: 2rem;
+  width: 100px;
+}
+
+.sidebar {
+  background-color: #C9ADA7;
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.content {
+  background-color: #F2E9E4;
+  border: 1px dotted black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  color:lightgray;
+  grid-area: footer;
+  justify-self: center;
+  align-self: center;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="mygrid">
+          <div class="titlebar">
+            <span class="logo">logo</span>
+            <span class="name">David Schuh</span>
+            <ul class="navbar">
+              <li>link 1</li>
+              <li>link 2</li>
+              <li>link 3</li>
+            </ul>
+          </div>
+          <div class="sidebar">
+            <h2>Cell 2</h2>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+          </div>
+          <div class="content">Cell 3</div>
+          <div class="content">Cell 4</div>
+          <div class="content">Cell 5</div>
+          <div class="content">Cell 6</div>
+          <div class="footer">Cell 7</div>
+        </div>
+      </div>
+</body>
+</html>
+

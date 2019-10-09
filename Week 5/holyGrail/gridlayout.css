@@ -1,0 +1,43 @@
+html { font-family: sans-serif }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #4A4E69;
+}
+
+.mygrid {
+  width: 65%;
+  background-color: #22223B;
+  border: 1px dotted black;  
+}
+
+.titlebar {
+  background-color: #70877F;
+  color:white;
+}
+
+.navbar li {
+}
+
+.navbar {
+}
+
+.name {
+}
+
+.logo {
+}
+
+.sidebar {
+  background-color: #C9ADA7;
+}
+
+.content {
+  background-color: #F2E9E4;
+  border: 1px dotted black;
+}
+
+.footer {
+  color:lightgray;
+}

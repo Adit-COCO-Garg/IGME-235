@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,MAAM,EAAE,SAAS;CAEpB",
+    "sources": [
+        "gridstyles.scss"
+    ],
+    "names": [],
+    "file": "gridstyles.css"
+}

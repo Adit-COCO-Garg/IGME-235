@@ -1,0 +1,15 @@
+body{
+    width:300px;
+    height:300px;
+    display:flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-flow:row wrap;
+
+}
+.square {
+    height: 98px;
+    width: 98px;
+    background-color:orange;
+    margin:1px;
+  }
