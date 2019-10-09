@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial;
+}
+
+.top-nav {
+  background-color: #2e3532;
+}
+
+header {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #e0e2db;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header h1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+header a {
+  all: unset;
+}
+
+header a:not(:last-child) {
+  margin-right: 2vw;
+}
+
+.container {
+  padding: 0 4vw 0 4vw;
+}
+
+#hum-tetris img {
+  width: 100%;
+}
+
+body {
+  background-color: #e0e2db;
+}
+
+.tid-bits {
+  background-color: #d2d4c8;
+  width: 20%;
+  height: 30vh;
+  margin-right: 4%;
+  display: flexbox;
+  float: left;
+}
+
+.tid-bits p, .tid-bits h2 {
+  padding: 5%;
+}
+
+.tid-bits h2 {
+  color: #13295c;
+}
+
+.tid-bits img {
+  width: 100%;
+}
+
+.sec-main {
+  background-color: #bc0c06;
+  padding: 2%;
+  width: 44%;
+  height: 28vh;
+  margin: 4% 4% 4% 0;
+  float: left;
+  color: #d2d4c8;
+}
+
+.sec-main h2 {
+  padding-bottom: 4%;
+}
+
+footer {
+  clear: left;
+  height: 7vh;
+  background-color: #2e3532;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #e0e2db;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */
