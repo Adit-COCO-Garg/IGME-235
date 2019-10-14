@@ -7,6 +7,8 @@ Desktop Only
 # Esthetics
 Dark, Pixel art (8 bit style), Cyberpunk
 
+# Gameplay
+The player will have to constantly fight his own morality and question one's ethics in this dark fight for survival. Players will have to hunt and gather while steering clear of other factions and protecting their own.
 
 ### Note
   I Know we aren't supposed to do slides but I have a lot of material written up in slides regarding the game's design [here](https://docs.google.com/presentation/d/1_I57wngANtndPDTE_liiA2QYeUgZ9VrF3cqrf8MgQrM/edit?usp=sharing "Google slides on the game")
