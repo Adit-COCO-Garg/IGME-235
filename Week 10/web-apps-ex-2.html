@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>DOM-3</title>
+	<style>
+		body{border:1px solid gray;}
+		p b{transform: rotate(20deg)}
+	</style>
+</head>
+<body>
+<h1>My Page</h1>
+<h2>Info</h2>
+<h2>Pictures</h2>
+<h2>More Info</h2>
+<p>Blah <b>Blah</b> Blah</p>
+<p>Blah <b>Blah</b> Blah</p>
+<p id="lastParagraph">Blah <b>Blah</b> Blah</p>
+<footer>Copyright &copy; <b>20XX</b></footer>
+<script>
+	"use strict"; 
+    let h1 = document.querySelector("h1");
+    let h2 = document.querySelectorAll("h2");
+    let p = document.querySelectorAll("p");
+    h1.innerHTML = "My  UFO PAGE";
+    h2[0].innerHTML = "My UFO info";
+    h2[1].innerHTML = "My UFO Pictures";
+    h2[2].innerHTML = "";
+    let body = document.body.style;
+    body.fontFamily = "sans-serif";
+    body.color = "#DC143C";
+    p[0].innerHTML = "<a href= 'http://www.nuforc.org'>Report your UFO sightings here:<a>";
+	let pStyle = p[0].style;
+    pStyle.color = "green";
+    pStyle.fontWeight = "bold";
+    pStyle.fontSize="2em";
+    pStyle.textTransform="uppercase";
+    pStyle.textShadow="3px 2px #A44"
+    p[1].innerHTML = "";
+    p[2].innerHTML = "<img src='https://images.unsplash.com/photo-1499532744860-fb7526b66e7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1114&q=80' alt='ufo'>"
+	let footer  = document.querySelector("footer")
+    footer.innerHTML = "&copy; Adit 2019";
+    </script>
+</body>
+</html>
