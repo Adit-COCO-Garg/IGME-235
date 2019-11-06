@@ -11,3 +11,6 @@
 Instructor: Professor David Schuh 😎
 ### 📌 Here's an Intro. (This was required as part of an assignment)
 Hi, I'm Adit 🙋‍♂️, also known as COCO to friends and those who have trouble pronouncing my name 🤷‍♂️ (I'll demo you on how to pronounce it correctly, just lmk). I am very passionate about traveling and visiting new places✈. I 💗 to learn and help around :D. Discord: ------- (might post it, idk)
+
+
+# Due to a lot of ongoing projects the documentation for this repo is still on the back burner ✌
