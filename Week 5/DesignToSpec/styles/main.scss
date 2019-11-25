@@ -1,5 +1,5 @@
 @import "color-pallete";
-
+@import "mq";
 
 * {
     margin:0;
@@ -7,6 +7,12 @@
     box-sizing: border-box;
     font-family: Arial;
 }
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px
+);
 
 .top-nav{
     background-color: $primary-color;
@@ -27,6 +33,9 @@ header{
     a:not(:last-child){
         margin-right:2vw;
     }
+    a:hover{
+        cursor: pointer;
+    }
 }
 .container{
     padding: 0 4vw 0 4vw;
@@ -40,11 +49,13 @@ body{
     background-color: $tertiary-color;
 }
 
+
 .tid-bits{
     background-color: $sup2-color;
-    width:20%;
-    height:30vh;
+    width:22%;
+    height:35em;
     margin-right:4%;
+    margin-top: 4%;
     display:flexbox;
     float:left;
     p, h2{
@@ -58,18 +69,68 @@ body{
         width:100%;
     }
 }
+main, div{
+    overflow:hidden;
+}
+main{
+    flex-wrap: wrap;
+}
+.tid-bits:last-child{
+    margin-right:0;
+}
+
+.tid-bits{
+    @include mq($from:tablet, $until: desktop){
+        width:46%;
+        height:35em;
+        margin: 4% 4% 0% 0%;
+        .tid-bits:nth-child(2){
+            margin-right: 0;
+        }
+        .tid-bits:nth-child(4){
+            margin-right: 0;
+        }
+    }
+    @include mq($until: tablet){
+        width:100%;
+        height:40em;
+        margin: 4% 0% 0% 0% ;
+    }
+}
 
 .sec-main{
     background-color:$secondary-color;
     padding:2%;
-    width:44%;
-    height:28vh;
+    width:48%;
+    height:30vh;
     margin:4% 4% 4% 0;
     float: left;
     color:$sup2-color;
     h2{
         padding-bottom:4%;
     }
+}
+.sec-main:last-child{
+    margin-right:0;
+}
+.sec-main{
+    @include mq($from:tablet, $until: desktop){
+        width:100%;
+        height:28%;
+        margin:4% 4% 4% 0;
+        .sec-main:last-child{
+            margin-right:0;
+        }
+    }
+    @include mq($until: tablet){
+        width:100%;
+        height:20em;
+        margin: 4% 4% 4% 0% ;
+        .sec-main:last-child{
+            margin-top:0;
+        }
+    }
+    
 }
 
 footer{

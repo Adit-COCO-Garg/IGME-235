@@ -1,106 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Adit Garg: 235 Home Page</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
     <div class="container">
-        <header>
-            <a href="index.html"><img src="assets/logo.svg" alt="Logo" class="logo"></a>
-            <nav>
-                <a href="#" class="hide-desktop">
-                    <img src="assets/ham.svg" alt="toggle menu" class="menu" id="menu">
-                </a>
-                <img src="" alt="">
-                <ul class="show-desktop hide-mobile">
-                    <li id="exit" class="exit-btn hide-desktop"><img src="assets/exit.svg" alt="Exit menu icon"></li>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">contact</a></li>
-
-                </ul>
-            </nav>
-
-        </header>
         <section>
-            <img src="assets/server.svg" alt="server graphic" class="server">
-            <h1>IGME 235</h1>
-            <p class="subhead">Basic web page for IGME 235</p>
-            <img src="assets/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
-
+            <img src="assets/adit.jpg" alt="my picture" class="adit">
+            
+            <h1>Adit Garg 235 Adit</h1>
+            <p class="subhead">Jack of all trades with a diverse skill set involving everything from problem-solving (coding) to design and leadership.
+                I hope to learn web design practices and techniques
+            </p>
         </section>
     </div>
-    <div class = "blue-container">
-        <div class="container">
-            <dl>
-                <dt><img src="assets/icon-1.svg" alt="Calendar Icon"></dt>
-                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit.</dd>
-                <dt><img src="assets/icon-2.svg" alt="Wallet Icon"></dt>
-                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit.</dd>
-                <dt><img src="assets/icon-3.svg" alt="Mobile Icon"></dt>
-                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit.</dd>
-            </dl>
-        </div>
-    </div>
-    <div class="gray-container">
-        <div class="container">
-            <dl>
-                <figure>
-                    <dt><img src="assets/user1.png" alt="user 1 testimonial"></dt>
-                    <dd><blockquote>lorem , ipsum dolor sit amet consectetur adipisi.</blockquote></dd>
-                    <figcaption->- John Doe</figcaption->
-                </figure>
-                <figure>
-                        <dt><img src="assets/user2.png" alt="user 2 testimonial"></dt>
-                        <dd><blockquote>lorem , ipsum dolor sit amet consectetur adipisi.</blockquote></dd>
-                        <figcaption->- Kalen victoria</figcaption->
-                </figure>
-            </dl>
-        </div>
-    </div>
-    <div class="container">
-        <h2>Start your free trial!</h2>
-        <a href="#" class="cta">Get Started</a>
 
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#"><img src="assets/project.png" alt="Project 2"></a>
+                    <p>Project 2</p>
+                </li>
+                <li>
+                    <a href="Project 1"><img src="assets/project.png" alt="Project 1: Deamon Punk"></a>
+                    <a href="Project 1"><p>Project 1: Deamon Punk</p></a></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/project.png" alt="Project 3"></a>
+                    <p>Project 3</p>
+                </li>
+            </ul>
+        </div>
     </div>
+
     <footer>
         <div class="footer-container">
             <div class="container">
-                <a href="#">
-                    <img src="assets/logo-white.svg" alt="logo" class="logo">  
-                    <p class="address">Melrose Place, 90210<br>USA</p>
-                    <ul class="footer-links">
-                        <li> <a href="">Terms of service</a></li>
-                        <li> <a href="">Privacy Policy</a></li>
-                    </ul>
-                </a>
+                <p class="address">Rochester 🌺🐝<br>USA</p>
+                <ul class="footer-links">
+                    <li><a href="https://www.flaticon.com/authors/ddara">Icons made by dDara</a></li>
+                </ul>
             </div>
         </div>
     </footer>
-    
-    <script>
-    
-            var menu = document.getElementById('menu');
-            var nav = document.getElementById('nav');
-            var exit = document.getElementById('exit');
-    
-            menu.addEventListener('click', function(e) {
-                nav.classList.toggle('hide-mobile');
-                e.preventDefault();
-            });
-    
-            exit.addEventListener('click', function(e) {
-                nav.classList.add('hide-mobile');
-                e.preventDefault();
-            });
-    
-        </script>
 </body>
-
 </html>

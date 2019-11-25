@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Deamon Slayer Quote Generator</h1>
+        <p>Adit Garg</p>
+    </header>
+    <main>
+        <h2>Deamon Slayer Quotes:</h2>
+        <p id="quote-paragraph"></p>
+    </main>
+    <button type="submit" >
+        <p>Click me!</p>
+    </button>
+</body>
+<script>
+    "use strict";
+    let quotes = ["Become the most durable blade of all! Hone that one thing to perfection", 
+    "Feel the rage. The powerful, rage of not being able to forgive will become your unswerving drive to take action", 
+    "It's not about going first it's about the overall flow.",
+    "It's all right to cry. It's all right to run away. Just don't give up!",
+    "You endured all that hellish training. You'll be rewarded for that without fail! Hone it to the utmost limit"];
+
+    let quote_paragraph = document.querySelector("#quote-paragraph");
+    quote_paragraph.innerHTML = quotes[Math.floor(Math.random()*quotes.length)];
+
+    const button = document.querySelector("button");
+    button.addEventListener("click", update_quote)
+
+    function update_quote(){
+        quote_paragraph.innerHTML = quotes[Math.floor(Math.random()*quotes.length)];
+    }
+</script>
+</html>

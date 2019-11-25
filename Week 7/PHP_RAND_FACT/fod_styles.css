@@ -1,0 +1,71 @@
+/*Fonts imported via google fonts*/
+@import url("https://fonts.googleapis.com/css?family=Imprima");
+/* Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Imprima', sans-serif;
+  font-weight: 400;
+  background-color: #A67784;
+}
+
+/* Default Styles End */
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10vh 20vh 30vh;
+      grid-template-rows: 10vh 20vh 30vh;
+  -ms-grid-columns: 20vw 80vw 20vw;
+      grid-template-columns: 20vw 80vw 20vw;
+  background-color: #F2B3C4;
+  color: #F2E5D5;
+}
+
+main h1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  margin: 0.7rem;
+}
+
+main p {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  margin: 1.2rem;
+  padding-right: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 20vw 80vw 20vw;
+      grid-template-columns: 20vw 80vw 20vw;
+}
+
+footer input[type=submit] {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  overflow: hidden;
+  border: none;
+  background-color: #F2D1CE;
+  padding: 3rem;
+  color: #3f0023;
+}
+/*# sourceMappingURL=fod_styles.css.map */

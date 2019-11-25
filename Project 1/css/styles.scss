@@ -10,48 +10,75 @@
 body{
     display:flex;
     justify-content: center;  
+    background-color:rgb(16, 5, 51);
+    
 }
 header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding:3vh;
-    background-color: $ter-color;
-    color: rgb(2, 5, 26);
-    h1{
+    background-color:rgb(7, 1, 27) ;
+    
+    a{
+        
+        font-weight: bold;
+        font-size: 1.5rem;
+        display: flex;
+        text-decoration: none;
+        color:$prim-color;
         padding:5vh;
         flex-wrap: nowrap;
+    }
+    a:hover {
+        background-color:$prim-color; 
+        box-shadow: 0 4px 8px 0 rgba(242,12,139, 0.25), 0 6px 20px 0 rgba(242,12,139, 0.20);
+        color:white;
     }
 }
 article:last-child{
     figure{
         img:first-child{
-            width:30%;
+            width:25%;
+        }
+        img:nth-child(2){
+            width:25%;
         }
         img:last-child{
-            width:30%;
-        }
-    }
-}
-main{
-    background-color: $sup1-color;
-    color:$ter-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    article{
-        padding:3em;
-        
-        h2{
-            padding-bottom:1.2em;
-        }
-        p{
             width:50%;
         }
     }
 }
+main{
+    position: relative;
+    background-color: $sup1-color;
+    color:$ter-color;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    article{
+        width:50%;
+        margin:3em;
+        background-color:rgb(19, 7, 58);
+        padding:2em;
+        h2{
+            padding-bottom:1.2em;
+        }
+        p, dd{
+            font-size: 1.25em;
+            padding-bottom:3em;
+        }
+        dt{
+            font-size: 1.5em;
+            padding:0 0 0.4em 0;
+            a{color:$ter-color;}
+        }
+        ol{
+            
+            padding:2em;
+        }
+    }
+}
 #moodboard{
-    width:70%;
+    width:100%;
+    padding-bottom:1.5em;
     
 }
