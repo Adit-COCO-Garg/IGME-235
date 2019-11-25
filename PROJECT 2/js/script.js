@@ -5,11 +5,13 @@ const API_PARAMS = {
     rating: "g",
     lang: "en",
     random_id: "oof",
-    search_url: "https://api.giphy.com/v1/gifs/search?"+"api_key=md8TKXmklb61Iwgx5ARcazARdFESrjUy"
+    search_url: "https://api.giphy.com/v1/gifs/search?"+"api_key=md8TKXmklb61Iwgx5ARcazARdFESrjUy",
+    q_time:0,
+    colc:""
 };
 window.onload = (e) => {
     document.querySelector("#search").addEventListener("click", searchButtonClicked)
-    document.querySelector("#search").addEventListener("click", searchButtonClicked)
+    // document.querySelector("#search").addEventListener("click", searchButtonClicked)
 };
 // /* The function checks if the prototype method trim exists or not
 //  * https://medium.com/@ugwuraphael/javascript-properties-and-methods-string-prototype-trim-7806d765188
@@ -23,13 +25,29 @@ window.onload = (e) => {
 //     }
 
 async function searchButtonClicked(){
-    await temp(); 
-    let colc = new Colcade('.grid', {
-        columns: '.grid-col',
-        items: '.grid-item'
-    });
-    console.log("eh")
+    if (API_PARAMS.q_time!=0){
+        API_PARAMS.colc.destroy();
+        document.querySelectorAll(".grid-col").forEach(e=>{e.innerHTML=""});
+        await temp(); 
+        API_PARAMS.q_time=0;
+        API_PARAMS.colc = new Colcade(document.querySelector(".grid"), {
+            columns: '.grid-col',
+            items: '.grid-item'
+        });
+    } else {
+        await temp(); 
+        API_PARAMS.colc = new Colcade(document.querySelector(".grid"), {
+            columns: '.grid-col',
+            items: '.grid-item'
+        });
+        API_PARAMS.q_time=0;
     }
+    // if (!(API_PARAMS.q_time==0)) {
+    //     // variable is undefined or null
+    //     API_PARAMS.q_time=0;
+    // }
+    API_PARAMS.q_time=1;
+}
 
 async function temp(){
     temp_term = (encodeURIComponent(document.querySelector("#searchterm").value).trim());
@@ -59,6 +77,8 @@ async function temp(){
             });
             API_PARAMS.query = "&q=",
             API_PARAMS.search_url = "https://api.giphy.com/v1/gifs/search?"+"api_key=md8TKXmklb61Iwgx5ARcazARdFESrjUy"
+            
+            
             // selector string as first argument
         }
     }

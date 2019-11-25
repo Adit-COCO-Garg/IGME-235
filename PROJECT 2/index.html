@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <title>Giphy Finder</title>
-    <link rel="stylesheet" href="Styles/styles.css">  
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.3/lib/darkmode-js.min.js"></script>
+    
 </head>
 
 <body>
@@ -35,20 +37,39 @@
     <hr>
 
     <section>
-            <p><span id="num_data_found"></span> results were found.</p>
+        <p><span id="num_data_found"></span> results were found.</p>
     </section>
 
     <main class="grid">
-        <section class="grid-col grid-col--1"></section>
+        <!-- <section class="grid-col grid-col--1"></section>
         <section class="grid-col grid-col--2"></section>
         <section class="grid-col grid-col--3"></section>
-        <section class="grid-col grid-col--4"></section>
+        <section class="grid-col grid-col--4"></section> -->
 
 
     </main>
-    
-    
+
+
     <script src="js/script.js"></script>
+    <script>
+            let options = {
+                bottom: '64px', // default: '32px'
+                right: 'unset', // default: '32px'
+                left: '32px', // default: 'unset'
+                time: '0.5s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: '#fff', // default: '#fff'
+                buttonColorDark: '#100f2c', // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: false, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
+    
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+    </script>
 </body>
 <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+
 </html>
