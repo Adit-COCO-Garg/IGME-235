@@ -6,17 +6,25 @@
     <title>Giphy Finder</title>
     <link rel="stylesheet" href="Styles/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.3/lib/darkmode-js.min.js"></script>
-    
+
+
 </head>
 
 <body>
     <header>
         <section>
             <h1>GIPHY</h1>
-            <div class="widgets">
-                Search Term ->
-                <input id="searchterm" type="text" size="20" maxlength="20" autofocus value="cats" />
-            </div>
+            <!-- <div class="widgets">
+                Search Term -> -->
+            <!-- //<input id="searchterm" type="text" size="20" maxlength="20" autofocus value="cats" /> -->
+            <!-- <input type="text" id="searchterm" placeholder="">
+                <p id="tip">hit enter to search</p>
+            </div> -->
+            <fieldset>
+                <input type="text" id="searchterm" placeholder="">
+
+                <p id="tip">hit enter to search</p>
+            </fieldset>
         </section>
     </header>
     <div class="widgets">
@@ -50,25 +58,53 @@
     </main>
 
 
+    <script>
+        const search = document.getElementById('searchterm')
+        const tip = document.getElementById('tip')
+
+        //search.setAttribute('placeholder', 'Men who love weirdos');
+        let i = 0;
+        let message = 'Baby yoda';
+        let speed = 100;
+
+        function typeWriter() {
+            if (i < message.length) {
+                msg = search.getAttribute('placeholder') + message.charAt(i);
+                search.setAttribute('placeholder', msg)
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        typeWriter();
+        
+
+        search.addEventListener('keydown', () => {
+            tip.style.visibility = 'visible';
+            tip.style.opacity = '1';
+        })
+    </script>
+
     <script src="js/script.js"></script>
     <script>
-            let options = {
-                bottom: '64px', // default: '32px'
-                right: 'unset', // default: '32px'
-                left: '32px', // default: 'unset'
-                time: '0.5s', // default: '0.3s'
-                mixColor: '#fff', // default: '#fff'
-                backgroundColor: '#fff', // default: '#fff'
-                buttonColorDark: '#100f2c', // default: '#100f2c'
-                buttonColorLight: '#fff', // default: '#fff'
-                saveInCookies: false, // default: true,
-                label: '🌓', // default: ''
-                autoMatchOsTheme: true // default: true
-            }
-    
-            const darkmode = new Darkmode(options);
-            darkmode.showWidget();
+        let options = {
+            bottom: '64px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.5s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#02072F', // default: '#fff'
+            buttonColorDark: '#100f2c', // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: false, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
     </script>
+
 </body>
 <script src="https://unpkg.com/colcade@0/colcade.js"></script>
 

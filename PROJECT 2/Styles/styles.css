@@ -1,6 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 body {
   margin: 0;
-  font-family: "roboto";
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+p {
+  visibility: hidden;
 }
 
 h1 {
