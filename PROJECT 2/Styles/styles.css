@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
+  background-color: #090029;
+  color: #db0959;
+}
+
+#darkmode-toggle {
+  z-index: 1;
+}
+
+fieldset {
+  border: none;
 }
 
 input {
   border-radius: 20px;
+  padding: 1.1em;
   border: none;
   cursor: pointer;
 }
@@ -14,12 +25,19 @@ input:focus {
   outline: none;
 }
 
-p {
-  visibility: hidden;
+#darkmode-toggle {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #090029;
+  border-radius: 100%;
+  text-align: center;
 }
 
-h1 {
-  margin: 2em 0;
+p {
+  visibility: hidden;
 }
 
 img {
@@ -44,7 +62,8 @@ img {
   padding: 0 .1em;
 }
 
-.grid-col--2, .grid-col--3 {
+.grid-col--2,
+.grid-col--3 {
   display: none;
 }
 
@@ -63,9 +82,6 @@ img {
 @media (min-width: 768px) {
   .container {
     width: 90%;
-  }
-  h1 {
-    margin: 3em 0;
   }
   .grid-col--2 {
     display: block;
@@ -100,9 +116,6 @@ img {
   }
   .container {
     width: 80%;
-  }
-  h1 {
-    margin: 5em 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
