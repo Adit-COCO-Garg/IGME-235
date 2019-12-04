@@ -28,9 +28,9 @@ body {
 #searchterm {
   background-color: var(--secondary-color);
   color: var(--font-color);
+  width: 30vw;
   padding: 1rem;
-  margin: 1rem;
-  width: 30%;
+  margin: 0.8rem 1rem 1rem 1rem;
   border-radius: 1.5rem;
   font-weight: bold;
   border: none;
@@ -49,8 +49,8 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 100%;
-  -webkit-transition: background-color .5s ease-in-out;
-  transition: background-color .5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
   position: fixed;
   z-index: 1;
   right: 1rem;
@@ -67,13 +67,17 @@ body {
 
 header {
   background-color: var(--bg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 fieldset {
-  margin: 1rem;
   border: none;
   padding: 0;
-  margin: 0;
 }
 
 p {

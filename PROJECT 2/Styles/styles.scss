@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+ 
 
 :root {
     --primary-color: #302AE6;
@@ -29,9 +30,9 @@ body{
 #searchterm{
     background-color:var(--secondary-color);
     color:var(--font-color); 
-    padding: 1rem;
-    margin:1rem;
-    width:30%;
+    width:30vw;
+    padding:1rem;
+    margin:0.8rem 1rem 1rem 1rem;
     border-radius:1.5rem;
     font-weight: bold;
     border:none;
@@ -55,7 +56,7 @@ body{
         outline:none;
     }
     border-radius:100%;
-    transition:background-color .5s ease-in-out;
+    transition:background-color 0.5s ease-in-out;
     position: fixed;
     z-index: 1;
     right:1rem;
@@ -64,13 +65,13 @@ body{
 
 header{
     background-color:var(--bg-color);
+    display: flex;
+    justify-content: flex-start;
 }
 
 fieldset{
-    margin:1rem;
     border: none;
     padding:0;
-    margin:0;
 }
 
 p{
@@ -78,6 +79,7 @@ p{
 }
 
 h1 {
+
     margin:1rem;
     padding:0;
     display: inline-block;

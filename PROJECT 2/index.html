@@ -21,16 +21,7 @@
             <fieldset>
                 <input type="text" id="searchterm" placeholder="">
                 <p id="tip">hit enter to search</p>
-                <div class="widgets">
-                    Max # results ->
-                    <select id="limit">
-                        <option value="5">5</option>
-                        <option value="10" selected>10</option>
-                        <option value="25">25</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                    </select>
-                </div>
+                <input type="number" id="tentacles" name="tentacles" min="10" max="100">
             </fieldset>
     </header>
     <main class="grid">
@@ -53,7 +44,7 @@
         //search.setAttribute('placeholder', 'Men who love weirdos');
         let i = 0;
         let message = 'Baby yoda';
-        let speed = 100;
+        let speed = 60;
 
         function typeWriter() {
             if (i < message.length) {
