@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="Styles/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.3/lib/darkmode-js.min.js"></script>
 
-
 </head>
 
 <body>
     <header>
-        <section>
-            <h1>GIPHY</h1>
+            <h1>giphyFinder</h1>
             <!-- <div class="widgets">
                 Search Term -> -->
             <!-- //<input id="searchterm" type="text" size="20" maxlength="20" autofocus value="cats" /> -->
@@ -22,10 +20,8 @@
             </div> -->
             <fieldset>
                 <input type="text" id="searchterm" placeholder="">
-
                 <p id="tip">hit enter to search</p>
             </fieldset>
-        </section>
     </header>
     <div class="widgets">
         Max # results ->
@@ -37,16 +33,7 @@
             <option value="100">100</option>
         </select>
     </div>
-
-    <div class="widgets">
-        <button type="button" id="search" class="green">Find some GIFs!<br />:-)</button>
-    </div>
-    <div id="status">Ready to Search!</div>
-    <hr>
-
-    <section>
-        <p><span id="num_data_found"></span> results were found.</p>
-    </section>
+    
 
     <main class="grid">
         <!-- <section class="grid-col grid-col--1"></section>
@@ -57,6 +44,9 @@
 
     </main>
 
+    <span>
+        <input type="button" value="🌓" class="theme-toggle">
+    </span>
 
     <script>
         const search = document.getElementById('searchterm')
@@ -84,27 +74,8 @@
             tip.style.opacity = '1';
         })
     </script>
-
     <script src="js/script.js"></script>
-    <script>
-        let options = {
-            bottom: '64px', // default: '32px'
-            right: 'unset', // default: '32px'
-            left: '32px', // default: 'unset'
-            time: '0.5s', // default: '0.3s'
-            mixColor: '#fff', // default: '#fff'
-            backgroundColor: '#02072F', // default: '#fff'
-            buttonColorDark: '#100f2c', // default: '#100f2c'
-            buttonColorLight: '#fff', // default: '#fff'
-            saveInCookies: false, // default: true,
-            label: '🌓', // default: ''
-            autoMatchOsTheme: true // default: true
-        }
-
-        const darkmode = new Darkmode(options);
-        darkmode.showWidget();
-    </script>
-
+    <script src="js/theme.js"></script>
 </body>
 <script src="https://unpkg.com/colcade@0/colcade.js"></script>
 

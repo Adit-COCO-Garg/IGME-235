@@ -1,17 +1,72 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
+:root {
+  --primary-color: #302AE6;
+  --secondary-color: #eeeeee;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+  --toggle:#16073b;
 }
 
-input {
-  border-radius: 20px;
+[data-theme="dark"] {
+  --primary-color: #f5aa07;
+  --secondary-color: #16073b;
+  --font-color: #ffffff;
+  --bg-color: #0b0320;
+  --heading-color: #f50762;
+  --toggle:#eeeeee;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+#searchterm {
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
   border: none;
   cursor: pointer;
 }
 
-input:focus {
+#searchterm:focus {
   outline: none;
+}
+
+.theme-toggle {
+  background-color: var(--toggle);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+  -webkit-transition: background-color .5s ease-in-out;
+  transition: background-color .5s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.theme-toggle:focus {
+  outline: none;
+}
+
+header {
+  background-color: hotpink;
+}
+
+fieldset {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 p {
@@ -19,7 +74,9 @@ p {
 }
 
 h1 {
-  margin: 2em 0;
+  margin: 0;
+  display: inline-block;
+  color: var(--heading-color);
 }
 
 img {
@@ -63,9 +120,6 @@ img {
 @media (min-width: 768px) {
   .container {
     width: 90%;
-  }
-  h1 {
-    margin: 3em 0;
   }
   .grid-col--2 {
     display: block;
