@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #eeeeee;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+    --toggle:#16073b;
+}
 
+[data-theme="dark"] {
+    --primary-color: #f5aa07;
+    --secondary-color: #16073b;
+    --font-color: #ffffff;
+    --bg-color: #0b0320;
+    --heading-color: #f50762;
+    --toggle:#eeeeee;
+}
 
+<<<<<<< HEAD
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif !important;
@@ -24,9 +41,52 @@ input {
 
     &:focus {
         outline: none;
+=======
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+#searchterm{
+    
+    background-color:var(--secondary-color);
+    color:var(--font-color); 
+    padding: 1rem;
+    border-radius:1.5rem;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    &:focus{
+        outline:none;
     }
 }
 
+.theme-toggle{
+    background-color:var(--toggle);
+    padding: 1rem;
+    border-radius:1.5rem;
+    border:none;
+    cursor:pointer;
+    &:focus{
+        outline:none;
+>>>>>>> 442ddda53ea17c3619466c0550c9e365fa40720e
+    }
+    border-radius:100%;
+    transition:background-color .5s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    right:1rem;
+    bottom:1rem;
+}
+
+header{
+    background-color:hotpink;
+}
+
+<<<<<<< HEAD
 
 
 #darkmode-toggle{
@@ -41,6 +101,23 @@ input {
 
 p {
     visibility: hidden;
+=======
+fieldset{
+    display: inline-block;
+    border: none;
+    padding:0;
+    margin:0;
+}
+
+p{
+    visibility:hidden;
+}
+
+h1 {
+    margin:0;
+    display: inline-block;
+    color: var(--heading-color);
+>>>>>>> 442ddda53ea17c3619466c0550c9e365fa40720e
 }
 
 // h1 {
@@ -90,6 +167,7 @@ img {
         width: 90%;
     }
 
+<<<<<<< HEAD
     // h1 {
     //     margin: 3em 0;
     // }
@@ -98,6 +176,11 @@ img {
         display: block;
     }
 
+=======
+
+
+    .grid-col--2 { display: block; }
+>>>>>>> 442ddda53ea17c3619466c0550c9e365fa40720e
     .grid-col {
         padding: 0 .5em;
     }
