@@ -5,7 +5,7 @@
     --secondary-color: #eeeeee;
     --font-color: #424242;
     --bg-color: #fff;
-    --heading-color: #292922;
+    --heading-color: #f50762;
     --toggle:#16073b;
 }
 
@@ -18,43 +18,20 @@
     --toggle:#eeeeee;
 }
 
-<<<<<<< HEAD
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif !important;
-    background-color: #090029;
-    color:#db0959;
-}
-
-#darkmode-toggle {
-    z-index:1;
-}
-fieldset{
-    border:none;
-}
-input {
-    border-radius: 20px;
-    padding: 1.1em;
-
-    border: none;
-    cursor: pointer;
-
-    &:focus {
-        outline: none;
-=======
 body{
     margin:0;
     padding:0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     background-color: var(--bg-color);
     color: var(--font-color);
 }
 
 #searchterm{
-    
     background-color:var(--secondary-color);
     color:var(--font-color); 
     padding: 1rem;
+    margin:1rem;
+    width:30%;
     border-radius:1.5rem;
     font-weight: bold;
     border:none;
@@ -66,44 +43,31 @@ body{
 
 .theme-toggle{
     background-color:var(--toggle);
+    opacity: 0.7;
+    &:hover{
+        opacity: 1;
+    }
     padding: 1rem;
     border-radius:1.5rem;
     border:none;
     cursor:pointer;
     &:focus{
         outline:none;
->>>>>>> 442ddda53ea17c3619466c0550c9e365fa40720e
     }
     border-radius:100%;
     transition:background-color .5s ease-in-out;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     right:1rem;
     bottom:1rem;
 }
 
 header{
-    background-color:hotpink;
+    background-color:var(--bg-color);
 }
 
-<<<<<<< HEAD
-
-
-#darkmode-toggle{
-    position: absolute;
-    right:1em;
-    bottom: 1em;
-    transition: background-color 0.3s ease-in-out;
-    background-color: #090029;
-    border-radius: 100%;
-    text-align: center;
-}
-
-p {
-    visibility: hidden;
-=======
 fieldset{
-    display: inline-block;
+    margin:1rem;
     border: none;
     padding:0;
     margin:0;
@@ -114,15 +78,18 @@ p{
 }
 
 h1 {
-    margin:0;
+    margin:1rem;
+    padding:0;
     display: inline-block;
+    font-weight: normal;
+    font-size: 2rem;
     color: var(--heading-color);
->>>>>>> 442ddda53ea17c3619466c0550c9e365fa40720e
 }
 
-// h1 {
-//     margin: 2em 0;
-// }
+main{
+    margin: 2rem auto 2rem auto;
+    width:80%;
+}
 
 img {
 
@@ -167,20 +134,9 @@ img {
         width: 90%;
     }
 
-<<<<<<< HEAD
-    // h1 {
-    //     margin: 3em 0;
-    // }
-
-    .grid-col--2 {
-        display: block;
-    }
-
-=======
 
 
     .grid-col--2 { display: block; }
->>>>>>> 442ddda53ea17c3619466c0550c9e365fa40720e
     .grid-col {
         padding: 0 .5em;
     }

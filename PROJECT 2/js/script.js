@@ -1,7 +1,7 @@
-const THEME = ["#f0f0f0","#090029", true, true,];
+// const THEME = ["#f0f0f0","#090029", true, true,];
 const API_PARAMS = {
     query: "&q=",
-    query_limit: "&limit=10",
+    query_limit: "&limit=40",
     offset: 0,
     rating: "g",
     lang: "en",
@@ -27,18 +27,18 @@ window.onload = (e) => {
 
 
 
-function toggleDarkMouseOver(){
-    this.style.backgroundColor = THEME[3] ? THEME[0] : THEME[1];
-    THEME[3] = !THEME[3];
-}
+// function toggleDarkMouseOver(){
+//     this.style.backgroundColor = THEME[3] ? THEME[0] : THEME[1];
+//     THEME[3] = !THEME[3];
+// }
 
 
-function toggleDarkclick(){
-    this.style.backgroundColor = THEME[2] ? THEME[0] : THEME[1];
-    document.querySelector("body").style.backgroundColor =  THEME[2] ? THEME[0] : THEME[1];
-    THEME[2] = !THEME[2];
-    THEME[3] = !THEME[3];
-}
+// function toggleDarkclick(){
+//     this.style.backgroundColor = THEME[2] ? THEME[0] : THEME[1];
+//     document.querySelector("body").style.backgroundColor =  THEME[2] ? THEME[0] : THEME[1];
+//     THEME[2] = !THEME[2];
+//     THEME[3] = !THEME[3];
+// }
 
 
 // /* The function checks if the prototype method trim exists or not

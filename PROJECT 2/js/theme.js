@@ -1,5 +1,4 @@
-THEME = "dark"
-
+let THEME = "dark"
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
 if (currentTheme) {
@@ -21,9 +20,11 @@ document.querySelector(".theme-toggle").addEventListener("click", ToggleTheme);
 
 
 function ToggleTheme(){
+    console.log("hey")
     if (THEME=="dark"){
         document.documentElement.setAttribute('data-theme', 'dark')
         THEME = "light"
+        console.log("2hey")
     } 
     else{
         document.documentElement.setAttribute('data-theme', 'light')

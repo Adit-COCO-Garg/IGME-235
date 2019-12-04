@@ -4,7 +4,7 @@
   --secondary-color: #eeeeee;
   --font-color: #424242;
   --bg-color: #fff;
-  --heading-color: #292922;
+  --heading-color: #f50762;
   --toggle:#16073b;
 }
 
@@ -19,26 +19,8 @@
 
 body {
   margin: 0;
-<<<<<<< HEAD
-  font-family: 'Roboto', sans-serif !important;
-  background-color: #090029;
-  color: #db0959;
-}
-
-#darkmode-toggle {
-  z-index: 1;
-}
-
-fieldset {
-  border: none;
-}
-
-input {
-  border-radius: 20px;
-  padding: 1.1em;
-=======
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
   background-color: var(--bg-color);
   color: var(--font-color);
 }
@@ -47,9 +29,10 @@ input {
   background-color: var(--secondary-color);
   color: var(--font-color);
   padding: 1rem;
+  margin: 1rem;
+  width: 30%;
   border-radius: 1.5rem;
   font-weight: bold;
->>>>>>> 442ddda53ea17c3619466c0550c9e365fa40720e
   border: none;
   cursor: pointer;
 }
@@ -58,23 +41,9 @@ input {
   outline: none;
 }
 
-<<<<<<< HEAD
-#darkmode-toggle {
-  position: absolute;
-  right: 1em;
-  bottom: 1em;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-  background-color: #090029;
-  border-radius: 100%;
-  text-align: center;
-}
-
-p {
-  visibility: hidden;
-=======
 .theme-toggle {
   background-color: var(--toggle);
+  opacity: 0.7;
   padding: 1rem;
   border-radius: 1.5rem;
   border: none;
@@ -82,10 +51,14 @@ p {
   border-radius: 100%;
   -webkit-transition: background-color .5s ease-in-out;
   transition: background-color .5s ease-in-out;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   right: 1rem;
   bottom: 1rem;
+}
+
+.theme-toggle:hover {
+  opacity: 1;
 }
 
 .theme-toggle:focus {
@@ -93,11 +66,11 @@ p {
 }
 
 header {
-  background-color: hotpink;
+  background-color: var(--bg-color);
 }
 
 fieldset {
-  display: inline-block;
+  margin: 1rem;
   border: none;
   padding: 0;
   margin: 0;
@@ -108,10 +81,17 @@ p {
 }
 
 h1 {
-  margin: 0;
+  margin: 1rem;
+  padding: 0;
   display: inline-block;
+  font-weight: normal;
+  font-size: 2rem;
   color: var(--heading-color);
->>>>>>> 442ddda53ea17c3619466c0550c9e365fa40720e
+}
+
+main {
+  margin: 2rem auto 2rem auto;
+  width: 80%;
 }
 
 img {
