@@ -3,7 +3,7 @@
 
 ### Resources Used:
 #### Giphy API
-For this project I am using the (Giphy API)[https://developers.giphy.com/].
+For this project I am using the [Giphy API](https://developers.giphy.com/).
 
 #### Darkmode:
 Darkmode was a bit of a hurdle. I first tried to use [Darkmode.JS](https://darkmodejs.learn.uno/), however, the default css mix was applied to everything and it made the images negative. The solution offered by the library broke the grid/ flex layouts and had to be dealt manually, which was too tedious and out of scope due to the dynamic nature of my layouts and content.
