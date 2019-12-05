@@ -1,1 +1,18 @@
+# giphyFinder
+> I worked alone on this project.
 
+### Resources Used:
+#### Giphy API
+For this project I am using the (Giphy API)[https://developers.giphy.com/].
+
+#### Darkmode:
+Darkmode was a bit of a hurdle. I first tried to use [Darkmode.JS](https://darkmodejs.learn.uno/), however, the default css mix was applied to everything and it made the images negative. The solution offered by the library broke the grid/ flex layouts and had to be dealt manually, which was too tedious and out of scope due to the dynamic nature of my layouts and content.
+After that I struggled with implementing my own darkmode in JS but it turned out to be tedious as I found I would have to apply every single style using JS and keep track of state.
+At the ends, SCSS came to the rescue! I was able to use local storage and CSS vars to implement dynamic css on the fly with minimal dependencies whilst maximizing efficiency.
+
+#### Masonry layout:
+At first I tried to use [Masonry.js](https://masonry.desandro.com/) even though the library was feature rich it was cumbersome to implement due to the dynamic nature of the content.
+After, some research I came across (Colcade.JS)(https://github.com/desandro/colcade) a lightweight-refined version of [Masonry.js](https://masonry.desandro.com/), the dynamic nature of the content made it dificult to generate masonry layouts. However implementing some quick workarounds I was able to get it up and running perfectly.
+
+#### Javascript ES2017
+I decided to use async/ await introduced in ECMA-2017 instead of using XHR, AJAX, or any other flavor/ method of reloading content dynamically. This partly due to my sheer tenacity to learn and find simplest yet efficient ways to do things. 
