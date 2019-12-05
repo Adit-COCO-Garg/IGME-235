@@ -14,5 +14,5 @@ At the ends, SCSS came to the rescue! I was able to use local storage and CSS va
 At first I tried to use [Masonry.js](https://masonry.desandro.com/) even though the library was feature rich it was cumbersome to implement due to the dynamic nature of the content.
 After, some research I came across (Colcade.JS)(https://github.com/desandro/colcade) a lightweight-refined version of [Masonry.js](https://masonry.desandro.com/), the dynamic nature of the content made it dificult to generate masonry layouts. However implementing some quick workarounds I was able to get it up and running perfectly.
 
-#### Javascript ES2017
-I decided to use async/ await introduced in ECMA-2017 instead of using XHR, AJAX, or any other flavor/ method of reloading content dynamically. This partly due to my sheer tenacity to learn and find simplest yet efficient ways to do things. 
+#### Javascript ES2017()
+I decided to use async/ await[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function] (watch this amazing (video by fireship)[https://www.youtube.com/watch?v=vn3tm0quoqE] on async/ await)introduced in (ECMA-2017)[https://www.ecma-international.org/ecma-262/8.0/#sec-async-function-definitions] instead of using XHR, AJAX, or any other flavor/ method of reloading content dynamically. This partly due to my sheer tenacity to learn and find simplest yet efficient ways to do things. 
