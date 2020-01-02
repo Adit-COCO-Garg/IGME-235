@@ -12,5 +12,6 @@ Instructor: Professor David Schuh 😎
 Grade: A
 
 [Giphy Finder](giphyFinder/) is one of my favorite in class homework turned passion project.
+![Giphy finder sample](GitHubAssets/giphyfinder.gif)
 
 #### Due to a lot of ongoing projects, classes, and genreal life stuff the documentation for this repo is still on the back burner ✌
