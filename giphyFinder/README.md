@@ -1,6 +1,6 @@
 # giphyFinder
-> I worked alone on this project.
-
+> I worked alone on this project.  
+![Giphy finder sample](GitHubAssets/giphyfinder.gif)  
 ### Resources Used:
 #### Giphy API
 For this project I am using the [Giphy API](https://developers.giphy.com/).
