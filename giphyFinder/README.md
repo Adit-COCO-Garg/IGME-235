@@ -2,7 +2,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 ### GiphyFinder 🔎🖼
-
+[Giphy Finder](giphyFinder/) is one of my favorite in class homework turned passion project.  
 ![Giphy finder sample](GitHubAssets/giphyfinder.gif)  
 Try out GiphyFinder for youself! 👉 [click me](https://people.rit.edu/ag9126/235/GiphyFinder/ "A link to giphy finder")🐱‍🐉
 ### Resources Used:
