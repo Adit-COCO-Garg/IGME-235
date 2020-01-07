@@ -4,7 +4,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-### Introduction to 👨‍💻 Web Technology for 🕹 Game Developers (IGME-235)  
+## Introduction to 👨‍💻 Web Technology for 🕹 Game Developers (IGME-235)  
 
 IGME 235 is a sophomore class that is availble to both Game Development and Design and New Media Interactive Development Majors as one of the core classes. It teaches advanced topics in front-end development.
 > This repo serves as a catalog 📒 of the work I did in IGME-235. 
