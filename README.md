@@ -12,7 +12,8 @@ IGME 235 is a sophomore class that is availble to both Game Development and Desi
 Instructor: Professor David Schuh 😎  
 Grade: A  
   
-### Giphy Finder
+ 😁 Projects I want to brag about:  
+### Giphy Finder 🔎🖼
 [Giphy Finder](giphyFinder/) is one of my favorite in class homework turned passion project.  
 ##### Wait for a second to see the gif!
 [![Giphy finder sample](GitHubAssets/giphyfinder.gif)](giphyFinder/)
