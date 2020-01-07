@@ -2,7 +2,11 @@
 [![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 ### GiphyFinder 🔎🖼
-[Giphy Finder](giphyFinder/) is one of my favorite in class homework turned passion project.  
+[Giphy Finder](giphyFinder/) is one of my favorite in class homework turned passion project.
+The project started off as a simple website that just pulls images from the api and displays them without much visual appeal or freedom just a grid of sad squares.  
+My love for gifs and memes called out to me and I proceeded on a 2 week journey in midst of the busiest part of the semester - mid-terms to consider numerous libraries, solutions, and even stacks to implement my vision.  
+You are crazy - my prof said. And soon enough after racking my brains I came up with something I was proud of... The Giphy Finder. It's far from my ideal vision but hey it's somewhere on the right way!  
+
 ![Giphy finder sample](GitHubAssets/giphyfinder.gif)  
 Try out GiphyFinder for youself! 👉 [click me](https://people.rit.edu/ag9126/235/GiphyFinder/ "A link to giphy finder")🐱‍🐉
 ### Resources Used:
