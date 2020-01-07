@@ -1,10 +1,10 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-# giphyFinder 🐱‍🐉
+### GiphyFinder 🔎🖼
 
 ![Giphy finder sample](GitHubAssets/giphyfinder.gif)  
-Try out GiphyFinder for youself! 👉 [click me](https://people.rit.edu/ag9126/235/GiphyFinder/ "A link to giphy finder")
+Try out GiphyFinder for youself! 👉 [click me](https://people.rit.edu/ag9126/235/GiphyFinder/ "A link to giphy finder")🐱‍🐉
 ### Resources Used:
 #### Giphy API
 For this project I am using the [Giphy API](https://developers.giphy.com/).
