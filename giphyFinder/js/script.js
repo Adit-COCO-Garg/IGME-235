@@ -1,7 +1,7 @@
 // const THEME = ["#f0f0f0","#090029", true, true,];
 const API_PARAMS = {
     query: "&q=",
-    query_limit: "&limit=40",
+    query_limit: "&limit=100",
     offset: 0,
     rating: "g",
     lang: "en",
