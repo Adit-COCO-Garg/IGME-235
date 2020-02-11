@@ -1,4 +1,3 @@
-// const THEME = ["#f0f0f0","#090029", true, true,];
 const API_PARAMS = {
     query: "&q=",
     query_limit: "&limit=100",
@@ -13,44 +12,13 @@ const API_PARAMS = {
 
 
 window.onload = (e) => {
-    // document.querySelector("#searchterm").addEventListener("keydown", searchButtonClicked);
-    // document.querySelector("#darkmode-toggle").addEventListener("mouseover", toggleDarkMouseOver);
-    // document.querySelector("#darkmode-toggle").addEventListener("mouseleave", toggleDarkMouseOver);
-    // document.querySelector("#darkmode-toggle").addEventListener("click", toggleDarkclick);
     document.querySelector("#searchterm").addEventListener("keyup", event=>{
         if (event.key == "Enter"){
             searchButtonClicked();
         }
     });
-
 };
 
-
-
-// function toggleDarkMouseOver(){
-//     this.style.backgroundColor = THEME[3] ? THEME[0] : THEME[1];
-//     THEME[3] = !THEME[3];
-// }
-
-
-// function toggleDarkclick(){
-//     this.style.backgroundColor = THEME[2] ? THEME[0] : THEME[1];
-//     document.querySelector("body").style.backgroundColor =  THEME[2] ? THEME[0] : THEME[1];
-//     THEME[2] = !THEME[2];
-//     THEME[3] = !THEME[3];
-// }
-
-
-// /* The function checks if the prototype method trim exists or not
-//  * https://medium.com/@ugwuraphael/javascript-properties-and-methods-string-prototype-trim-7806d765188
-//  * Raphael Ugwu
-//  * 
-// */
-// if (!string.prototype.trim) {
-//     String.prototype.trim = function() {
-//     return this.replace(/^[\s\uFEFF\xAO] + |[\s\uFEFF\xAO] + $ /g, ' ');
-//     };
-//     }
 
 async function searchButtonClicked(e) {
         if (API_PARAMS.q_time != 0) {
@@ -72,13 +40,9 @@ async function searchButtonClicked(e) {
             });
             API_PARAMS.q_time = 0;
         }
-        // if (!(API_PARAMS.q_time==0)) {
-        //     // variable is undefined or null
-        //     API_PARAMS.q_time=0;
-        // }
         API_PARAMS.q_time = 1;
-    
 }
+
 
 async function temp() {
     temp_term = (encodeURIComponent(document.querySelector("#searchterm").value).trim());
@@ -106,11 +70,6 @@ async function temp() {
             });
             API_PARAMS.query = "&q=",
                 API_PARAMS.search_url = "https://api.giphy.com/v1/gifs/search?" + "api_key=md8TKXmklb61Iwgx5ARcazARdFESrjUy"
-
-
-            // selector string as first argument
         }
-
     }
-    
 }
