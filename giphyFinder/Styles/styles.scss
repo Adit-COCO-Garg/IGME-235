@@ -32,11 +32,11 @@ body{
     color:var(--font-color); 
     width:30vw;
     padding:1rem;
-    margin:0.8rem 1rem 1rem 1rem;
+    margin:0.8rem 0.2rem 0.2rem 1rem;
     border-radius:1.5rem;
     font-weight: bold;
     border:none;
-    cursor:pointer;
+    cursor: text;
     &:focus{
         outline:none;
     }
@@ -67,26 +67,50 @@ header{
     background-color:var(--bg-color);
     display: flex;
     justify-content: flex-start;
+    margin: 0 auto 0 auto;
+    width:80%;
+    h1 {
+        margin:1rem 1rem 1rem 0;
+        padding:0;
+        display: inline-block;
+        font-weight: normal;
+        font-size: 2rem;
+        color: var(--heading-color);
+    }
 }
+
+
 
 fieldset{
     border: none;
     padding:0;
+    margin-right:0.5rem;
+    #searchfields{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
-
-p{
-    visibility:hidden;
-}
-
-h1 {
-
-    margin:1rem;
-    padding:0;
+#number_of_results{
+    border-radius:1.5rem ;
+    background-color:var(--secondary-color);
+    color:var(--font-color); 
     display: inline-block;
-    font-weight: normal;
-    font-size: 2rem;
-    color: var(--heading-color);
+    border:none;
+    margin:0.8rem 0rem 0.2rem 1rem;
+    height:1rem;
+    padding:1rem;
+    width:3rem;
+
 }
+#tip {
+    display: block;
+    text-align: right;
+    visibility:hidden;
+    font-size: 0.7rem;
+}
+
+
 
 main{
     margin: 2rem auto 2rem auto;
